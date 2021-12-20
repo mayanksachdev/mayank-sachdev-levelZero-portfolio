@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Martel:wght@400;700&family=Montserrat:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Martel:wght@400;700&family=Montserrat:wght@400;700&family=Shizuru&display=swap');
 
 :root {
     --primary-color:
@@ -14,18 +13,19 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Marcellus', serif;
+    font-size: 20px;
     color: #334155;
     background-color: var(--secondary-color);
     margin: 0rem;
 }
 
 .container {
-    padding: 0rem 1rem;
+    padding: 0rem 0.5rem;
 }
 
 .container-center {
-    margin: auto;
+    margin: 0rem auto;
     max-width: 600px;
 }
 
@@ -46,6 +46,13 @@ body {
     color: var(--primary-color)
 }
 
+.link-container {
+    padding: 1rem;
+    text-align: center;
+
+}
+
+
 hr {
     margin: 2rem 0rem;
     margin-inline-start: 0px;
@@ -53,6 +60,7 @@ hr {
 }
 
 .list-no-bullets {
+    padding-inline-start: 0px;
     list-style: none;
 }
 
@@ -62,10 +70,19 @@ hr {
 }
 
 .section {
-    padding: 2rem 0rem;
+    padding: 2rem 0rem 3rem;
 }
 
 .section h1 {
+    text-align: center;
+    margin: 1.5rem 0rem 1rem;
+}
+
+.section-small {
+    font-size: 15px;
+}
+
+.section p {
     text-align: center;
 }
 
@@ -77,8 +94,10 @@ hr {
 .navigation {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding: 1rem 0rem;
-    border-bottom-left-radius: 1rem
+    padding: 1rem 0rem 0.25rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom: 4px solid #6b21a8;
+
 }
 
 .navigation .nav-brand {
@@ -91,6 +110,7 @@ hr {
 
 .navigation .nav-pills {
     text-align: right;
+    font-size: 25px;
 }
 
 .navigation .link-active {
@@ -118,11 +138,18 @@ hr {
     color: var(--primary-color)
 }
 
+.hero p {
+    text-align: center;
+    color: var(--hero-heading);
+    font-weight: bolder;
+}
+
 .footer {
     background-color: var(--primary-color);
     padding: 2rem 0rem;
     text-align: center;
     border-top-right-radius: 1rem;
+    border-top: 4px solid #6b21a8;
     color: var(--secondary-color);
     margin-left: 0rem;
 
@@ -130,7 +157,7 @@ hr {
 
 .footer-header {
     font-size: larger;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .footer .link {
@@ -139,4 +166,15 @@ hr {
 
 .footer ul {
     padding-inline-start: 0px;
+}
+
+
+.link:hover {
+    color: #292524;
+    text-shadow: 1.5px 1px 0.5px white;
+}
+
+.link-secondary:hover {
+    color: black;
+    text-shadow: 1.5px 1px 0.5px #d8b4fe;
 }
